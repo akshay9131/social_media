@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheet/feed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
+        integrity="sha512-i5VzKip7owqOGjb0YTF8MR2J9yBVO3FLHeazKzLp354XYTmKcqEU3UeFYUw82R8tV6JqxeATOfstCfpfPhbyEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="pp" style="background-image: url('<%= data.user.profile_picture %>');">
+                
+            </div>
+            
+            <h1><%= data.user.name %></h1>
+            <a href="/logout"><button class="logoutBtn"> <i class="ri-logout-circle-r-line"></i> Log Out</button></a>
+        </div>
+        <div class="right">
+            <div class="top">
+                <!-- <div class="nav"> -->
+                    <div class="first">
+                        <i class="ri-home-8-line"></i>
+                    </div>
+                    <a href="/create-screen"><button class="createbtn"><i class="ri-folder-add-line"></i> Create Post</button></a>
+                    <div class="sec"><h2>Sociall</h2></div>
+                <!-- </div> -->
+            </div>
+            <div class="mid"></div>
+            <div class="btm">
+                <div class="center">
+                    <% for(posts of data.post.rows) { %>
+                        <div class="card">
+                            <div class="cardTop">
+                                <div class="ctprofile" style="background-image: url('<%= posts.User.profile_picture %>');"></div>
+                                <h2 ><%= posts.User.name %></h2>
+                            </div>
+                            
+                            <div class="postiimg" style="background-image: url('<%= posts.image %>');"></div>
+                            <div class="cardbtm">
+                                <i class="ri-heart-2-line"></i>
+                                <a href="/all-comment/<%= posts.id %>"><i class="ri-chat-3-line"></i></a>
+                            </div>
+                            <div class="caption">
+                                <h1><%= posts.title %></h1>
+                            <p><%= posts.description %></p>
+                            </div>
+                            
+                        </div>
+                        <% } %>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

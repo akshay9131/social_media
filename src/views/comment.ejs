@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../stylesheet/comment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
+        integrity="sha512-i5VzKip7owqOGjb0YTF8MR2J9yBVO3FLHeazKzLp354XYTmKcqEU3UeFYUw82R8tV6JqxeATOfstCfpfPhbyEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+         <a href="/all-post"><i class="ri-arrow-left-circle-line"></i></a>
+        <h2>Sociall</h2>
+    </div>
+    <div class="main">
+        <div class="center">
+            <div class="left">
+                <div class="cardTop">
+                    <div class="ctprofile" style="background-image: url('<%= data.commentPost.User.profile_picture %>');"></div>
+                    <h2 ><%= data.commentPost.User.name %></h2>
+                </div>
+                <div class="imgdiv" style="background-image: url('<%= data.commentPost.image %>');">
+
+                </div>
+                <div class="caption">
+                    <h1><%= data.commentPost.title %></h1>
+                <p><%= data.commentPost.description %></p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top"></div>
+                <div class="btm">
+                    <form>
+                    <input id="comment" class="comment" name="comment" type="text" placeholder="comment">
+                    <button type="submit" id="submit" class="post_comment" data-id="<%= data.commentPost.id %>">Post</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/comment.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.left{
+    height: 100%;
+    width: 20%;
+    padding: 10px 20px;
+    background-color: rgb(23, 37, 53);
+}
+
+.left h1{
+    color: white;
+    text-align: center;
+
+}
+
+.logoutBtn{
+    margin-top: 480px;
+    /* padding: 10px 100px; */
+    width: 100%;
+    height: 40px;
+}
+
+.pp{
+    height: 15%;
+    width: 40%;
+    margin: 40px 80px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.right{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(210, 206, 206);
+    justify-content: space-between;
+}   
+
+.top{
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.first{
+    width: 10%;
+}
+
+.first i{
+    font-size: 40px;
+    /* width: 0%; */
+    color: rgb(23, 37, 53);
+}
+
+.createbtn{
+    /* width: 30%; */
+    padding: 0px 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(23, 37, 53);
+}
+
+.sec{
+    width: 10%;
+    color: rgb(23, 37, 53);
+    font-family: Brush Script MT;
+    font-size: 25px;
+}
+
+.mid{
+    height: 1%;
+}
+
+.btm{
+    width: 100%;
+    height: 89%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    overflow-y: auto;
+    padding: 5px 5px;
+}
+
+.card{
+    height: 80%;
+    width: 100%;
+    margin-bottom: 50px;
+    border-top: 0.2px solid rgba(0, 0, 0, 0.195);
+}
+
+.cardTop{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.cardTop h2{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ctprofile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid rgb(23, 37, 53);
+}
+
+.cardbtm{
+    width: 100%;
+    height: 9%;
+    /* background-color: aqua; */
+    padding: 10px 0;
+    /* background-color: aquamarine; */
+}
+
+.cardbtm i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.caption{
+    width: 100%;
+    padding: 0px 10px;
+    /* background-color: bisque; */
+}
+
+.caption h1{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caption p{
+    font-size: 15px;
+    margin-top: 5px;
+    font-family: arial;
+    /* font-weight: 100; */
+}
+
+.postiimg{
+    height: 70%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+

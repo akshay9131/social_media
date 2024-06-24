@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../stylesheet/create_post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
+        integrity="sha512-i5VzKip7owqOGjb0YTF8MR2J9yBVO3FLHeazKzLp354XYTmKcqEU3UeFYUw82R8tV6JqxeATOfstCfpfPhbyEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+         <a href="/all-post"><i class="ri-arrow-left-circle-line"></i></a>
+        <h2>Sociall</h2>
+    </div>
+    <div class="main">
+        <div class="center">
+            <form>
+                <div class="image-wrapper">
+                    <img id="image-preview" src="../../images/post_placeholder.png" alt="image">
+                    <input id="image" type="file" class="image" name="image" style="display: none;">
+                </div>
+                <div class="feilds">
+                    <input id="title" class="title" name="title" type="text" placeholder="Title">
+                    <textarea name="description" id="description" placeholder="Description", class="description"></textarea>
+                    
+                </div>
+                <div class="postbtn">
+                    <button type="submit" id="submit" class="post">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/create_post.js"></script>
+</body>
+</html>

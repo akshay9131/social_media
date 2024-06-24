@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheet/home.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h2>Sociall</h2>
+            <a href="/loginscreen"><button class="loginbtn">Login</button></a>
+        </div>
+        <div class="centerdiv">
+            <div class="left"></div>
+            <div class="right">
+                <h1>Welcome</h1>
+                <h3>Berries gathering</h3>
+                <form id="signup-form" enctype="multipart/form-data">
+                    <div class="profile-picture-wrapper">
+                        <img id="profile-picture-preview" src="../../images/placeholder.png" alt="Profile Picture">
+                        <input id="profile_picture" type="file" class="profilePicture" name="profile_picture" style="display: none;">
+                    </div>
+                    <input id="email" class="signupinput" name="email" type="text" placeholder="email address">
+                    <input id="username" class="signupinput" name="name" type="text" placeholder="username">
+                    <input id="mobile" class="signupinput" name="mobile" type="text" placeholder="mobile number">
+                    <input id="password" class="signupinput" name="password" type="password" placeholder="password">
+                    <!-- <input id="profile_picture" type="file", class="profilePicture", name="profile_picture", placeholder="profile_picture"> -->
+                    <button type="submit" id="submit" class="signupbtn">Signup</button>
+                    <a href="" class="btma"> Login Instead </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../js/signup.js"></script>
+</body>
+
+</html>

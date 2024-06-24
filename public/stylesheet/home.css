@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(23, 37, 53);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: transparent;
+    color: white;
+    font-family: Brush Script MT;
+}
+
+.profile-picture-wrapper {
+    position: relative;
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    margin: 20px auto;
+}
+
+#profile-picture-preview {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgb(23, 37, 53);
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.loginbtn{
+    /* height: 20%; */
+    font-size: 15px;
+    padding: 10px 40px;
+    background-color: white;
+    color: rgb(23, 37, 53);
+    font-weight: 600;
+    border-radius: 20px;
+    /* width: 100%; */
+}
+
+.centerdiv{
+    height: 75%;
+    width: 60%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1506895272072-91df3e2966e9?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    /* background-color: beige; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    padding: 10px 80px;
+    text-align: center;
+    position: relative;
+    /* display: block; */
+}
+
+h1{
+    font-size: 50px;
+    font-family: Corbel;
+    font-weight: 100;
+    color: rgb(23, 37, 53);
+}
+
+h3{
+    font-size: 20px;
+    font-family: Corbel;
+    font-weight: 500;
+    color: rgb(23, 37, 53);
+}
+
+.signupinput{
+    display: block;
+    /* align-self: center; */
+    /* align-items: center; */
+    /* justify-content: center;  */
+    background-color: rgb(219, 213, 213);
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    color: black;
+    padding-left: 30px;
+    /* margin: 0px 0; */
+}
+
+.signupbtn{
+    font-size: 15px;
+    padding: 10px 0;
+    background-color: rgb(23, 37, 53);
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    width: 40%;
+    margin: 20px 0;
+}
+
+.btma{
+    display: block;
+    text-decoration: none;
+    color: rgb(23, 37, 53);
+    font-size: 20px;
+    font-family: Corbel;
+}
